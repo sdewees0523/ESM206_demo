@@ -1,0 +1,17 @@
+---
+title: "Graph"
+author: "Shane Dewees"
+date: "10/27/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+```{r}
+ggplot(mpg, aes(class, cty)) +
+  geom_jitter()
+```
+
